@@ -1,0 +1,31 @@
+server: 
+  port: 9001
+spring: 
+  application:  
+    name: newsblogsite-base #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.30.135:3306/newsblogsite_base?serverTimezone=GMT%2B8&useSSL=false&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+  jpa: 
+    database: MySQL
+    show-sql: true
+logging:
+  level:
+    org.springframework.security:
+      - debug
+      - info
+    org.springframework.web: error
+    org.hibernate.SQL: debug
+    org.hibernate.engine.QueryParameters: debug
+    org.hibernate.engine.query.HQLQueryPlan: debug
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka/
+  instance:
+    prefer-ip-address: true

@@ -1,0 +1,31 @@
+server: 
+  port: 9002
+spring:
+  application:
+    name: newsblogsite-user #指定服务名
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.30.135:3306/newsblogsite_user?serverTimezone=GMT%2B8&useSSL=false&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+  jpa:
+    database: MySQL
+    show-sql: true
+  redis:
+    host: 192.168.30.135
+  rabbitmq:
+    host: 192.168.30.135
+    username: guest
+    password: guigui
+
+jwt:
+  config:
+    key: NewsBlogSite
+    ttl: 3600000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka/
+  instance:
+    prefer-ip-address: true

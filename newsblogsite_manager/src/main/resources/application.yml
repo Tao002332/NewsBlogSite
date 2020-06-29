@@ -1,0 +1,37 @@
+server:
+  port: 9010
+
+spring:
+  application:
+    name:  newsblogsite-manager
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka/
+  instance:
+    prefer-ip-address: true
+
+zuul:
+  routes:
+    newsblogsite-base:
+      path: /base/**
+      serviceId: newsblogsite-base
+    newsblogsite-comment:
+      path: /comment/**
+      serviceId: newsblogsite-comment
+    newsblogsite-friend:
+      path: /friend/**
+      serviceId: newsblogsite-friend
+    newsblogsite-gathering:
+      path: /gathering/**
+      serviceId: newsblogsite-gathering
+    newsblogsite-news:
+      path: /news/**
+      serviceId: newsblogsite-news
+    newsblogsite-search:
+      path: /search/**
+      serviceId: newsblogsite-search
+    newsblogsite-user:
+      path: /user/**
+      serviceId: newsblogsite-user

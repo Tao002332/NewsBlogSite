@@ -1,0 +1,15 @@
+server:
+  port: 9008
+spring:
+  application:
+    name: newsblogsite-search
+  data:
+    elasticsearch:
+      cluster-nodes: 192.168.30.135:9300
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka/
+  instance:
+    prefer-ip-address: true

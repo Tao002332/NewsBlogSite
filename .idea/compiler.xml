@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="newsblogsite_search" />
+        <module name="newsblogsite_eureka" />
+        <module name="newsblogsite_manager" />
+        <module name="newsblogsite_user" />
+        <module name="newsblogsite_comment" />
+        <module name="newsblogsite_gathering" />
+        <module name="newsblogsite_web" />
+        <module name="newsblogsite_news" />
+        <module name="newsblogsite_sms" />
+        <module name="newsblogsite_friend" />
+        <module name="newsblogsite_base" />
+        <module name="newsblogsite_common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="newsblogsite_web (1)" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="newsblogsite_base" options="-parameters" />
+      <module name="newsblogsite_comment" options="-parameters" />
+      <module name="newsblogsite_common" options="-parameters" />
+      <module name="newsblogsite_eureka" options="-parameters" />
+      <module name="newsblogsite_friend" options="-parameters" />
+      <module name="newsblogsite_gathering" options="-parameters" />
+      <module name="newsblogsite_manager" options="-parameters" />
+      <module name="newsblogsite_news" options="-parameters" />
+      <module name="newsblogsite_search" options="-parameters" />
+      <module name="newsblogsite_sms" options="-parameters" />
+      <module name="newsblogsite_user" options="-parameters" />
+      <module name="newsblogsite_web" options="-parameters" />
+      <module name="newsblogsite_web (1)" options="-parameters" />
+    </option>
+  </component>
+</project>
